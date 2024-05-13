@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ImprimirLinhas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite um número:");
+        int n = scanner.nextInt();
+
+        System.out.println("Digite o número de linhas:");
+        int linhas = scanner.nextInt();
+
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(n + " ");
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+}
